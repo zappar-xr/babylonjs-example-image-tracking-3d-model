@@ -37,7 +37,7 @@ const light1 = new BABYLON.HemisphericLight('hemi', new BABYLON.Vector3(1, -1, 0
 const shadowGenerator = new BABYLON.ShadowGenerator(1024, light);
 shadowGenerator.usePoissonSampling = true;
 // Setup a Zappar camera instead of one of Babylon's cameras
-const camera = new ZapparBabylon.Camera(scene);
+const camera = new ZapparBabylon.Camera('ZapparCamera', scene);
 
 // Request the necessary permission from the user
 ZapparBabylon.permissionRequestUI().then((granted) => {
@@ -47,7 +47,7 @@ ZapparBabylon.permissionRequestUI().then((granted) => {
 
 const imageTracker = new ZapparBabylon.ImageTrackerLoader().load(target);
 // eslint-disable-next-line max-len
-const trackerTransformNode = new ZapparBabylon.ImageAnchorTransformNode(camera, imageTracker, scene);
+const trackerTransformNode = new ZapparBabylon.ImageAnchorTransformNode('tracker', camera, imageTracker, scene);
 
 trackerTransformNode.setEnabled(false);
 imageTracker.onVisible.bind(() => {
