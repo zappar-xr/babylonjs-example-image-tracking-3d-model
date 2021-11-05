@@ -31,7 +31,7 @@
   "dependencies": {
     "@babylonjs/core": "^4.2.0",
     "@zappar/webgl-snapshot": "0.0.15",
-    "@zappar/zappar-babylonjs": "^0.3.27",
+    "@zappar/zappar-babylonjs": "^0.3.29",
     "babylonjs": "^4.2.0",
     "babylonjs-loaders": "^4.2.0",
     "babylonjs-materials": "^4.2.0"
