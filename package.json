@@ -31,6 +31,7 @@
   "dependencies": {
     "@zappar/zappar-babylonjs": "^0.3.30",
     "babylonjs": "^4.2.1",
-    "babylonjs-loaders": "^4.2.1"
+    "babylonjs-loaders": "^4.2.1",
+    "babylonjs-materials": "^4.2.1"
   }
 }
