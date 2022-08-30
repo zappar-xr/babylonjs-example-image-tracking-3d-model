@@ -3,10 +3,12 @@
 import * as BABYLON from 'babylonjs';
 import * as ZapparBabylon from '@zappar/zappar-babylonjs';
 import * as MAT from 'babylonjs-materials';
-import target from '../assets/example-tracking-image.zpt';
-import model from '../assets/trainers.glb';
+
+const target = new URL('../assets/example-tracking-image.zpt', import.meta.url).href;
+const model = new URL('../assets/trainers.glb', import.meta.url).href;
+
 import 'babylonjs-loaders';
-import './index.sass';
+import './index.css';
 // The SDK is supported on many different browsers, but there are some that
 // don't provide camera access. This function detects if the browser is supported
 // For more information on support, check out the readme over at

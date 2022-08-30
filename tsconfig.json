@@ -1,13 +1,20 @@
 {
-  "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs",
-    "declaration": true,
-    "outDir": "./lib",
-    "lib": ["es2015", "dom"],
-    "strict": true,
-    "esModuleInterop": true
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "**/__tests__/*"]
-}
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "esnext",
+      "moduleResolution": "node",
+      "outDir": "./lib",
+      "lib": ["es2020", "dom"],
+      "strict": true,
+      "esModuleInterop": true,
+      "rootDir": "./src",
+      "noImplicitUseStrict": true,
+      "alwaysStrict": false,
+      "types": [
+        "babylonjs",
+        "babylonjs-materials"
+      ]
+    },
+    "include": ["src"],
+    "exclude": ["node_modules"]
+  }
